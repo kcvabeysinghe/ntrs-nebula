@@ -30,4 +30,4 @@ Read the invisible dot back into text.
 NTRS_Nebula.exe decrypt --image key.png --password "123"
 
 
-Copyright (c) 2025 [YOUR NAME]. All Rights Reserved.
+Copyright (c) 2025 CHETHANA ABEYSINGHE. All Rights Reserved.
