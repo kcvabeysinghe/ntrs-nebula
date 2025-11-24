@@ -1,0 +1,84 @@
+﻿NTRS Nebula: Zero-Point Optical Encryption
+
+Version 1.0 | Created by CHETHANA ABEYSINGHE
+
+NTRS (Nano-Topographic Radial Steganography) is a revolutionary optical encryption protocol. It replaces traditional text-based keys with Invisible Zero-Point Dots.
+
+🚀 Features
+
+Zero-Point Logic: Wipes data values, stores only coordinates.
+
+Nebula Hash: Custom non-linear chaos math (No AES).
+
+Matrix Stealth: 100% Invisible Alpha-Channel encoding.
+
+Parity Check: Auto-corrects data stream errors.
+
+📦 Installation for Users (Standalone App)
+
+Download NTRS_Nebula.exe from the Releases page.
+
+Run it from your terminal or command prompt.
+
+📦 Installation for Developers (Python Library)
+
+To use NTRS inside your own Python software:
+
+pip install ntrs_nebula
+
+
+💻 Developer Usage Guide
+
+1. Integrating NTRS into Your Code
+
+Import the library and initialize the engine with a password (seed).
+
+from ntrs.core import NTRS
+
+# Initialize with a strong password
+engine = NTRS("MySecurePassword")
+
+
+2. Encrypting Data (Creating a Key)
+
+Turn a string (like an API Key, License Code, or Secret Message) into an image.
+
+secret_data = "LICENSE-KEY-8822-9911"
+output_file = "license_dot.png"
+
+print("Encrypting...")
+engine.encode(secret_data, output_file)
+print(f"Created {output_file}")
+
+
+3. Decrypting Data (Reading a Key)
+
+Read the image file back into a string.
+
+input_file = "license_dot.png"
+
+try:
+    result = engine.decode(input_file)
+    if "Error" in result:
+        print(f"Failed: {result}")
+    else:
+        print(f"Decrypted Data: {result}")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+
+⚙️ Technical Specs
+
+Encryption: NTRS Nebula Hash (Custom Chaos Stream)
+
+Error Correction: Reed-Solomon (Can survive ~20% data corruption)
+
+Signal Separation: Alpha-Channel Dithering (Δ1 value difference)
+
+Resolution: Quantum Limit (1px Matrix)
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Copyright (c) 2025 CHETHANA ABEYSINGHE. All Rights Reserved.
