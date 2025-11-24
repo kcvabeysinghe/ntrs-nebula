@@ -1,33 +1,28 @@
-﻿NTRS Nebula: Zero-Point Optical Encryption
+# NTRS Nebula: Zero-Point Optical Encryption
+[![PyPI version](https://badge.fury.io/py/ntrs-nebula.svg)](https://badge.fury.io/py/ntrs-nebula)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Version 1.0 | Created by CHETHANA ABEYSINGHE
+**Created by CHETHANA ABEYSINGHE**
 
-NTRS (Nano-Topographic Radial Steganography) is a revolutionary optical encryption protocol. It replaces traditional text-based keys with Invisible Zero-Point Dots.
+> **NTRS (Nano-Topographic Radial Steganography)** is a revolutionary optical encryption protocol. Unlike traditional steganography that hides data in pixel values (LSB), NTRS wipes the value and stores data as a **Coordinate Map** (Zero-Point Dots) in the Alpha Channel.
 
-🚀 Features
+---
 
-Zero-Point Logic: Wipes data values, stores only coordinates.
+## 🚀 Features
+* **Zero-Point Logic:** Stores data as coordinates, not binary values.
+* **Nebula Hash:** Custom non-linear chaos stream cipher (No AES).
+* **Matrix Stealth:** 100% Invisible Alpha-Channel encoding (Quantum Limit 1px).
+* **Parity Check:** Reed-Solomon error correction (Survives ~20% corruption).
 
-Nebula Hash: Custom non-linear chaos math (No AES).
+---
 
-Matrix Stealth: 100% Invisible Alpha-Channel encoding.
+## 📦 Installation
 
-Parity Check: Auto-corrects data stream errors.
+### For Normal Users (Windows App)
+1.  Download **NTRS_Nebula.exe** from the [Releases Page](../../releases).
+2.  Run it from your terminal (Command Prompt).
 
-📦 How to Use
-
-1. Encrypt (Create a Key)
-
-Turn your text into an invisible dot.
-
-NTRS_Nebula.exe encrypt --text "My Secret Password" --image key.png --password "123"
-
-
-2. Decrypt (Read a Key)
-
-Read the invisible dot back into text.
-
-NTRS_Nebula.exe decrypt --image key.png --password "123"
-
-
-Copyright (c) 2025 CHETHANA ABEYSINGHE. All Rights Reserved.
+### For Developers (Python Library)
+To use the NTRS protocol inside your own software:
+```bash
+pip install ntrs-nebula
